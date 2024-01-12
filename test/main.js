@@ -4,7 +4,8 @@ import got from 'got';
 
 const { JSDOM } = jsdom;
 
-const url = 'https://al3xback.github.io/fmentor-stats-preview-mocha-unexpected/';
+const url =
+	'https://al3xback.github.io/fmentor-stats-preview-mocha-unexpected/';
 
 const getData = () => {
 	return got(url)
@@ -27,37 +28,38 @@ describe('DOM', () => {
 		}
 	});
 
-	it('should have an author image element which has alt and dimension equals to mockup data', () => {
+	it('should have status list item element which has label and value equals to mockup data', () => {
 		const cardStatListItemElements = document.querySelectorAll(
 			'.card__stats-list-item'
 		);
 
-		const statListData = [];
+		const statList = [];
 
 		for (let i = 0; i < cardStatListItemElements.length; i++) {
 			const cardStatListItemEl = cardStatListItemElements[i];
 			const amount = cardStatListItemEl.firstElementChild.textContent;
 			const label = cardStatListItemEl.lastElementChild.textContent;
 
-			statListData.push({
+			statList.push({
 				amount: amount,
 				label: label,
 			});
 		}
 
-		const mockupStatListData = [
+		const mockupStatList = [
 			{ amount: '10K+', label: 'Companies' },
 			{ amount: '314', label: 'Templates' },
 			{ amount: '12M+', label: 'Queries' },
 		];
 
-		expect(statListData, 'to satisfy', mockupStatListData);
+		expect(statList, 'to satisfy', mockupStatList);
 	});
 
 	it('should have an empty alt attribute value of card image element', () => {
-		const cardImageAlt = document.querySelector('.card__image img').alt;
+		const cardImgEl = document.querySelector('.card__image img');
+		const cardImgAlt = cardImgEl.getAttribute('alt');
 
-		expect(cardImageAlt, 'to be', '');
+		expect(cardImgAlt, 'to be', '');
 	});
 
 	it("should have a heading one element with a class of 'sr-only'", () => {
