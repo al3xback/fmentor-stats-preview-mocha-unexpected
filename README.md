@@ -19,7 +19,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Mocha - Unexpected Testing
+- Mocha - Unexpected
 - Mobile-first workflow
 
 ## Author

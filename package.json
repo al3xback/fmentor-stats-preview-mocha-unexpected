@@ -1,7 +1,7 @@
 {
 	"name": "fmentor-stats-preview-mocha-unexpected",
 	"version": "1.0.0",
-	"description": "stats preview card component using mocha and unexpected testing",
+	"description": "stats preview card component using mocha and unexpected",
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
