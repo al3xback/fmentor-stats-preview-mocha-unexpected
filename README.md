@@ -19,7 +19,8 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Mocha - Unexpected
+- Mocha
+- Unexpected
 - Got
 - Jsdom
 - Mobile-first workflow
