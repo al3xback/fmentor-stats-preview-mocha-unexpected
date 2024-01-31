@@ -1,9 +1,16 @@
 @use '../abstracts/variables' as var;
 @use '../abstracts/functions' as func;
 
-.card {
+.card .card__image,
+.card__image-inner,
+.card__content,
+.card__stats-list,
+.card__stats-list-item {
 	display: flex;
 	flex-direction: column;
+}
+
+.card {
 	width: 100%;
 	max-width: func.em(420, var.$font-size-primary);
 	background-color: var.$color-dark-desaturated-blue;
@@ -11,14 +18,6 @@
 		func.em(60, var.$font-size-primary);
 	border-radius: 8px;
 	overflow: hidden;
-}
-
-.card__image,
-.card__content,
-.card__stats-list,
-.card__stats-list-item {
-	display: flex;
-	flex-direction: column;
 }
 
 .card__image-inner {
