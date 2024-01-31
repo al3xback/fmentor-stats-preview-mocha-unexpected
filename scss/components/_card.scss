@@ -1,7 +1,8 @@
 @use '../abstracts/variables' as var;
 @use '../abstracts/functions' as func;
 
-.card .card__image,
+.card,
+.card__image,
 .card__image-inner,
 .card__content,
 .card__stats-list,
