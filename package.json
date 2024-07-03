@@ -1,8 +1,7 @@
 {
 	"name": "fmentor-stats-preview-mocha-unexpected",
+	"private": true,
 	"version": "1.0.0",
-	"description": "stats preview card component using mocha and unexpected",
-	"main": "index.js",
 	"type": "module",
 	"scripts": {
 		"sass-dev": "sass --watch scss/main.scss css/main.css",
@@ -14,16 +13,6 @@
 		"test": "mocha",
 		"build": "run-s lint sass-prod postcss"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/al3xback/fmentor-stats-preview-mocha-unexpected.git"
-	},
-	"author": "alex <al3xback@gmail.com>",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/al3xback/fmentor-stats-preview-mocha-unexpected/issues"
-	},
-	"homepage": "https://github.com/al3xback/fmentor-stats-preview-mocha-unexpected#readme",
 	"devDependencies": {
 		"autoprefixer": "^10.4.16",
 		"got": "^14.0.0",
